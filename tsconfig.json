@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "strict": true,
+        "isolatedModules": true,
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "noEmit": true,
+        "verbatimModuleSyntax": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "$lib": ["./resources/js/lib"],
+            "$lib/*": ["./resources/js/lib/*"],
+            "@/*": ["./resources/js/*"],
+            "ziggy-js": ["./vendor/tightenco/ziggy"]
+        }
+    },
+    "include": [
+        "resources/js/**/*.ts",
+        "resources/js/**/*.svelte",
+        "resources/js/**/*.d.ts"
+    ]
+}
