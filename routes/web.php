@@ -6,7 +6,10 @@ use App\Http\Middleware\SaveSelector;
 use Native\Desktop\Facades\Window;
 use Inertia\Inertia;
 Route::get('/', [LoaderController::class, 'index'])->name('index');
-Route::get('/selectSave/{save}', [LoaderController::class, 'selectSave'])->name('selectSave');
+Route::post('/selectSave/{save_id}', [LoaderController::class, 'selectSave'])->name('selectSave');
+
+Route::post('/goHome', [LoaderController::class, 'goHome'])->name('goHome');
+
 
 Route::get('/test', function () {
     return Inertia::render('test');

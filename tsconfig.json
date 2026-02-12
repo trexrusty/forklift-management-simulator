@@ -17,7 +17,9 @@
             "$lib": ["./resources/js/lib"],
             "$lib/*": ["./resources/js/lib/*"],
             "@/*": ["./resources/js/*"],
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
+            "ziggy-js": ["./vendor/tightenco/ziggy"],
+            "$components": ["./resources/js/Pages/Components"],
+            "$components/*": ["./resources/js/Pages/Components/*"]
         }
     },
     "include": [

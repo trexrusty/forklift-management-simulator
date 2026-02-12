@@ -16,6 +16,7 @@ export default defineConfig({
     resolve: {
         alias: {
             $lib: '/resources/js/lib',
+            $components: '/resources/js/Pages/Components',
         },
     },
     server: {

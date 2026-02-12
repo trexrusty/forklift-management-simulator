@@ -1,16 +1,11 @@
 <script>
-  import axios from 'axios';
+  import { router } from '@inertiajs/svelte';
 
-  async function openNewWindow() {
-    await axios.post('/settings', {
-    }).then(response => {
-        console.log('success');
-    }).catch(error => {
-        console.log('error');
-    });
+  function goHome() {
+    router.post('/goHome');
   }
 </script>
 
-<button on:click={openNewWindow}>
-    Open Settings
+<button onclick={goHome}>
+    Go Home
 </button>
